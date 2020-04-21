@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/conmment.css">
+    <!-- <link rel="stylesheet" href="./lib/reset.css"> -->
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+</head>
+
+<body>
+    <!-- 第一行 -->
+    <div class="yi">
+        <div class="yi-center">
+            <div class="yi-left">
+                <div class="yi-left-img-one"><img src="./images/1.1.jpg" alt=""></div>
+                <div class="yi-left-img-two">
+                    <img src="./images/1.2.jpg" alt="">
+                    <div class="yi-left-img-three"><img src="./images/1.2.hover.jpg" alt=""></div>
+                </div>
+
+
+            </div>
+            <div class="yi-right">
+                <div class="yi-right-left">
+                    <a href=""><i class="iconfont">&#xe501;</i>成长守护平台</a>
+                </div>
+                <div class="yi-right-right">
+                    <a href="">腾讯游戏排行<i class="iconfont">&#xe606;</i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        var e_code = document.getSelection(".yi-left-img-two");
+        var e_app = document.getSelection(".yi-left-img-three");
+        // 2. 监听鼠标进入
+        // console.log(e_code);
+        // console.log(e_app);
+        e_code.onmousemove = function() {
+            e_app.style.display = 'block';
+        };
+        // 3. 坚挺鼠标离开
+        e_code.onmouseout = function() {
+            // 2.2 隐藏二维码
+            e_app.style.display = 'none';
+        }
+    </script>
+    <!-- 第二行 -->
+    <div class="er">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "230095",
+      "name": "n",
+      "font_class": "n",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "753418",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "907792",
+      "name": "右",
+      "font_class": "you-copy",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "1563848",
+      "name": "下滑",
+      "font_class": "xiahua",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "5272883",
+      "name": "活动中心",
+      "font_class": "huodongzhongxin",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "5746505",
+      "name": "收 起",
+      "font_class": "shouqi4-copy-copy",
+      "unicode": "e508",
+      "unicode_decimal": 58632
+    },
+    {
+      "icon_id": "9268727",
+      "name": "空心圆",
+      "font_class": "iconfont911yuanhuanbiaoqian-copy-copy",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "10273511",
+      "name": "视频中心",
+      "font_class": "shiliangzhinengduixiang",
+      "unicode": "e7e1",
+      "unicode_decimal": 59361
+    },
+    {
+      "icon_id": "12756506",
+      "name": "加 添加 框选-9",
+      "font_class": "jiatianjiakuangxuan-",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "13074755",
+      "name": "添 加",
+      "font_class": "tianjia",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    }
+  ]
+}

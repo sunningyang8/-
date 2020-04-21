@@ -1,0 +1,81 @@
+.yi {
+    background-color: white;
+    width: 100%;
+    height: 42px;
+}
+
+.yi-center {
+    height: 100%;
+    width: 936px;
+    margin: 0 auto;
+    /* background-color: pink; */
+    /* overflow: hidden; */
+}
+
+.yi-left {
+    height: 100%;
+    width: 316px;
+    /* margin-left: 0; */
+    float: left;
+}
+
+.yi-left-img-one {
+    width: 86px;
+    height: 100%;
+    float: left;
+}
+
+.yi-left-img-one img {
+    width: 100%;
+    height: 100%;
+}
+
+.yi-left-img-two {
+    width: 180px;
+    height: 100%;
+    float: right;
+}
+
+.yi-right {
+    float: right;
+    width: 246px;
+    height: 100%;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 42px;
+}
+
+.yi-right-left {
+    float: left;
+}
+
+.yi-right-left a,
+.yi-right-right a {
+    text-decoration: none;
+}
+
+.yi-right-left a:hover {
+    color: rgb(185, 94, 94);
+}
+
+.yi-right-right {
+    float: right;
+}
+
+.yi-right-left i {
+    color: green;
+}
+
+.yi-right-right i {
+    color: #ccc;
+}
+
+.yi-left-img-three {
+    position: absolute;
+    margin-top: 0;
+    left: 456px;
+    top: 35px;
+    width: 850px;
+    height: 150px;
+    display: none;
+}
