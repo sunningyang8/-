@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/conmment.css">
     <!-- <link rel="stylesheet" href="./lib/reset.css"> -->
@@ -18,8 +19,8 @@
             <div class="yi-left">
                 <div class="yi-left-img-one"><img src="./images/1.1.jpg" alt=""></div>
                 <div class="yi-left-img-two">
-                    <img src="./images/1.2.jpg" alt="">
-                    <div class="yi-left-img-three"><img src="./images/1.2.hover.jpg" alt=""></div>
+                    <a href=""><img src="./images/1.2.jpg" alt=""></a>
+                    <div class="yi-left-img-three"><img src="./images/1.2.hover.jpg" style="display: none;" alt=""></div>
                 </div>
 
 
@@ -36,25 +37,260 @@
         </div>
 
     </div>
-    <script>
-        var e_code = document.getSelection(".yi-left-img-two");
-        var e_app = document.getSelection(".yi-left-img-three");
-        // 2. 监听鼠标进入
-        // console.log(e_code);
-        // console.log(e_app);
-        e_code.onmousemove = function() {
-            e_app.style.display = 'block';
-        };
-        // 3. 坚挺鼠标离开
-        e_code.onmouseout = function() {
-            // 2.2 隐藏二维码
-            e_app.style.display = 'none';
+    <!-- <script src="./lib/jquery-2.2.4.min.js">
+        function overShow(e) {
+            var p = $(e).children('div');
+            p.attr("style", "display:table-cell;");
         }
-    </script>
+
+        function outHide(e) {
+            var p = $(e).children('div');
+            p.attr("style", "display:none;");
+        }
+    </script> -->
+
     <!-- 第二行 -->
     <div class="er">
+        <div class="er-yi">
+            <div class="wrap">
+                <nav id="nav">
+                    <div class="logo">
+                        <a href="#"><img src="./images/logo.png" alt=""></a>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item active"><a href="#">首页</a></li>
+                        <li class="nav-item">
+                            <a href="#">版本专区</a>
+                            <div class="subMenu">
+                                <ul class="wrap">
+                                    <li><a href="#" class="y">最新版本</a></li>
+                                    <li><a href="#" class="y">最新赛季</a></li>
+                                    <li><a href="#" class="y">赛季回顾</a></li>
+                                    <li><a href="#" class="y">版本中心</a></li>
+                                    <li><a href="#" class="y">体验服</a></li>
+                                    <li><a href="#" class="y">皮肤宝库</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">游戏中心</a>
+                            <!-- 二级菜单 S-->
+                            <div class="subMenu">
+                                <ul class="wrap">
+                                    <li><a href="#" class="y">新闻资讯</a></li>
+                                    <li><a href="#" class="y">攻略中心</a></li>
+                                    <li><a href="#" class="y">视频中心</a></li>
+                                    <li><a href="#" class="y">武器库</a></li>
+                                    <li><a href="#" class="y">大神灵敏度</a></li>
+                                </ul>
+                            </div>
+                            <!-- 二级菜单 E-->
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">赛事专区</a>
+                            <!-- 二级菜单 S-->
+                            <div class="subMenu">
+                                <ul class="wrap">
+                                    <li><a href="#" class="y">赛事中心</a></li>
+                                    <li><a href="#" class="y">PE S1赛季</a></li>
+                                    <li><a href="#" class="y">PEN赛事</a></li>
 
+                                </ul>
+                            </div>
+                            <!-- 二级菜单 E-->
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">自助工具</a>
+                            <div class="subMenu">
+                                <ul class="wrap">
+                                    <li>
+                                        <a href="#" class="y">CDK兑换</a>
+                                    </li>
+                                    <li><a href="#" class="y">客服专区</a></li>
+                                    <li><a href="#" class="y">举报查询</a></li>
+                                    <li><a href="#" class="y">作者入住</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">社区论坛</a>
+                            <div class="subMenu">
+                                <ul class="wrap">
+                                    <li>
+                                        <a href="#" class="y">官方公众号</a>
+                                    </li>
+                                    <li><a href="#" class="y">微信用户社区</a></li>
+                                    <li><a href="#" class="y">QQ用户社区</a></li>
+                                    <li><a href="#" class="y">官方微博</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+            <script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+            <script>
+                $(function() {
+                    $('ul.nav li.nav-item').hover(function() {
+                        $(this).children('div.subMenu').stop().slideToggle(600);
+                    })
+                })
+            </script>
+        </div>
+        <div class="er-er">
+            <div class="er-er-yi"><img src="./images/er.er.png" alt=""></div>
+            <div class="er-er-er">
+                <!-- 幻灯片的容器 -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./images/er1.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./images/er2.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./images/er3.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./images/er4.jpeg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 分页 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- 滚动条 -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+            <script src="../lib/jquery-1.12.3.min.js"></script>
+            <script src="./js/swiper.min.js"></script>
+            <script src="./js/swiper.jquery.js"></script>
+            <script>
+                var mySwiper = new Swiper('.swiper-container', {
+                    // Optional parameters
+                    // direction: 'vertical',
+                    loop: true,
+
+                    // If we need pagination
+                    // 分页
+                    pagination: '.swiper-pagination',
+
+                    // Navigation arrows 左右按钮
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+
+                    // And if we need scrollbar
+                    // scrollbar: '.swiper-scrollbar',
+                })
+            </script>
+            <div class="slideTxtBox">
+
+                <div class="hd">
+
+                    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+
+                    <!-- <span class="arrow"><a class="next"></a><a class="prev"></a></span> -->
+
+                    <ul>
+                        <li>最新</li>
+                        <li>新闻</li>
+                        <li>公告</li>
+                        <li>活动</li>
+                        <li>赛事</li>
+                        <li><span class="iconfont" style="color: gold;">&#xe638;</span></li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul class="bd-er">
+                        <li class="yy zz">
+                            <a href="#" target="_blank">观战透视专项打击公告</a>
+                        </li>
+                        <li><span class="date">04-22</span>
+                            <a href="#" target="_blank">[最新] 《和平精英》X-Project，首档官方电竞节...</a>
+                        </li>
+                        <li><span class="date">04-21</span><a href="#" target="_blank">[最新] 福利送不停2020PEL“赛季开放日”ACE...</a></li>
+                        <li><span class="date">04-21</span><a href="#" target="_blank">[最新] 4AM周冠军秀！22日虎牙直播福利送不停</a></li>
+                        <li><span class="date">04-20</span><a href="#" target="_blank">[最新] 4月20日外挂打击公告</a></li>
+                        <li><span class="date">04-20</span><a href="#" target="_blank">[最新] PEL和平精英联赛0419战报，4AM稳扎稳...</a></li>
+
+                    </ul>
+
+                    <ul class="bd-er">
+                        <li class="yy zz">
+                            <a href="#" target="_blank">陈赫`娄艺潇携职业选手空降ACE王牌之夜PEL赛季开...</a>
+                        </li>
+                        <li><span class="date">04-17</span><a href="#" target="_blank">[新闻] 和平精英周年庆直播狂欢，好礼送不停！</a></li>
+                        <li><span class="date">04-17</span><a href="#" target="_blank">[新闻] 《和平精英》百强主播争夺人气桂冠，全民...</a></li>
+                        <li><span class="date">04-02</span><a href="#" target="_blank">[新闻] ACE时刻，王牌本色！OPPO Ace2成为《...</a></li>
+                        <li><span class="date">04-01</span><a href="#" target="_blank">[新闻] 4月3日外挂打击公告</a></li>
+                        <li><span class="date">04-01</span><a href="#" target="_blank">[新闻] 百度APP&百家号游戏电竞俱乐部-和平精...</a></li>
+                    </ul>
+
+                    <ul class="bd-er">
+                        <li class="yy zz">
+                            <a href="#" target="_blank">观战透视转向打击公告</a>
+                        </li>
+                        <li><span class="date">04-20</span><a href="#" target="_blank">[公告] 4月20日外挂打击公告</a></li>
+                        <li><span class="date">04-17</span><a href="#" target="_blank">[公告] 4月17日外挂打击公告</a></li>
+                        <li><span class="date">04-16</span><a href="#" target="_blank">[公告] 4月15日《和平精英》恶意组队专项打击公告</a></li>
+                        <li><span class="date">04-13</span><a href="#" target="_blank">[公告] 《和平精英》4月13日临时更新公告</a></li>
+                        <li><span class="date">04-10</span><a href="#" target="_blank">[公告] 4月10日外挂打击公告</a></li>
+                    </ul>
+                    <ul class="bd-er">
+                        <li class="yy zz">
+                            <a href="#" target="_blank">和平精英周年庆直播齐狂欢，好礼送不停!</a>
+                        </li>
+                        <li><span class="date">04-17</span><a href="#" target="_blank">[公告] 《和平精英》百强主播争夺人气桂冠，全民...</a></li>
+                        <li><span class="date">04-17</span><a href="#" target="_blank">[公告] 来快手发视频，赢取永久套装，Q币，京东...</a></li>
+                        <li><span class="date">04-16</span><a href="#" target="_blank">[公告] 斗鱼双圈军备对抗赛：主播带你体验新版本</a></li>
+                        <li><span class="date">04-13</span><a href="#" target="_blank">[公告] 潘粤明，姜超解锁斗鱼沙漠探索之旅</a></li>
+                        <li><span class="date">04-10</span><a href="#" target="_blank">[公告] 斗鱼沙漠探险队：强身主播带你体验新模式...</a></li>
+                    </ul>
+                    <ul class="bd-er">
+                        <li class="yy">
+                            <a href="#" target="_blank">强者不由界定，精英百战成名！</a>
+                        </li>
+                        <li><span class="date">04-17</span><a href="#" target="_blank">[赛事] 《和平精英》X-Project，首档官方电竞节...</a></li>
+                        <li><span class="date">04-17</span><a href="#" target="_blank">[赛事] 福利送不停2020PEL“赛季开放日”ACE</a></li>
+                        <li><span class="date">04-16</span><a href="#" target="_blank">[赛事] 4AM周冠军秀！22日虎牙直播福利送不停</a></li>
+                        <li><span class="date">04-13</span><a href="#" target="_blank">[赛事] PEL和平精英联赛0419战报，4AM稳扎稳...</a></li>
+                        <li><span class="date">04-10</span><a href="#" target="_blank">[赛事] 陈赫，娄艺潇携职业选手空降ACE王牌之夜...</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <script src="http://www.jq22.com/jquery/1.6.4/jquery.min.js">
+            </script>
+            <script type="text/javascript" src="./lib/jquery.SuperSlide.2.1.1.js"></script>
+            <script type=" text/javascript ">
+                jQuery(".slideTxtBox ").slide();
+            </script>
+        </div>
+        <div class="er-san">
+            <img src="./images/lx1.png" alt="" title="赛事中心">
+            <img src="./images/lx2.png" alt="" title="体验服招募">
+            <img src="./images/lx3.png" alt="" title="皮肤宝库">
+            <img src="./images/lx4.png" alt="" title="安全中心">
+        </div>
     </div>
+    <!-- 第三部分 -->
+    <div></div>
 </body>
 
 </html>

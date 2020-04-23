@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>宽屏通栏下拉菜单导航</title>
+    <style>
+        html,
+        body,
+        div,
+        ul,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        dl,
+        dt,
+        dd,
+        ol,
+        form,
+        input,
+        textarea,
+        th,
+        td,
+        select {
+            margin: 0;
+            padding: 0
+        }
+        
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        html,
+        body {
+            min-height: 100%
+        }
+        
+        body {
+            font-family: Helvetica, Pingfang SC, Microsoft YaHei, STHeiti, Verdana, Arial, Tahoma, sans-serif;
+            font-size: 14px;
+            color: #333;
+            background: #fff;
+            position: relative
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: normal
+        }
+        
+        ul,
+        ol {
+            list-style: none
+        }
+        
+        img {
+            border: none;
+            vertical-align: middle
+        }
+        
+        a {
+            color: #666;
+            text-decoration: none
+        }
+        
+        a:visited {
+            color: #666;
+            text-decoration: none
+        }
+        
+        a:hover {
+            color: #666;
+            text-decoration: none
+        }
+        
+        a:active {
+            color: #666;
+            text-decoration: none
+        }
+        
+        table {
+            border-collapse: collapse;
+            table-layout: fixed
+        }
+        
+        input,
+        textarea {
+            outline: none;
+            border: none
+        }
+        
+        textarea {
+            resize: none;
+            overflow: auto
+        }
+        
+        .clearfix {
+            zoom: 1
+        }
+        
+        .clearfix:after {
+            content: ".";
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+            overflow: hidden
+        }
+        /* 本案例CSS*/
+        
+        header {
+            position: relative;
+            z-index: 9999;
+            /* border-bottom: 2px solid #119f0f; */
+            height: 100px;
+            box-sizing: border-box;
+        }
+        
+        .wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        #nav {
+            display: flex;
+            /* display: flex; */
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            width: 230px;
+            overflow: hidden;
+        }
+        
+        .logo a {
+            display: block;
+        }
+        
+        .logo a img {
+            max-width: 100%;
+        }
+        
+        ul.nav {
+            display: inline-flex;
+            flex: 1;
+            padding-left: 50px;
+        }
+        
+        li.nav-item {
+            flex: 1;
+        }
+        
+        li.nav-item>a {
+            display: block;
+            text-align: center;
+            line-height: 100px;
+            font-size: 16px;
+            position: relative;
+        }
+        
+        li.nav-item>a::before {
+            display: none;
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            border-width: 0 10px 10px;
+            border-style: solid;
+            border-color: transparent transparent #119f0f;
+            position: absolute;
+        }
+        
+        li.nav-item:hover>a,
+        li.nav-item.active>a {
+            color: #119f0f;
+        }
+        
+        li.nav-item:hover>a::before,
+        li.nav-item.active>a::before {
+            display: block;
+        }
+        /* 二级菜单 */
+        
+        .subMenu {
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-color: #243124;
+            opacity: 0.5;
+        }
+        
+        .subMenu>ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .subMenu>ul>li>a {
+            display: block;
+            padding: 0 18px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+        }
+        
+        .subMenu>ul>li>a:hover {
+            color: red
+        }
+        /* .wrap {
+            background-color: #243124;
+            opacity: 0.5;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <nav id="nav">
+                <div class="logo">
+                    <a href="#"><img src="./images/logo.png" alt=""></a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item active"><a href="#">首页</a></li>
+                    <li class="nav-item">
+                        <a href="#">版本专区</a>
+                        <div class="subMenu">
+                            <ul class="wrap">
+                                <li><a href="#">最新版本</a></li>
+                                <li><a href="#">最新赛季</a></li>
+                                <li><a href="#">赛季回顾</a></li>
+                                <li><a href="#">版本中心</a></li>
+                                <li><a href="#">体验服</a></li>
+                                <li><a href="#">皮肤宝库</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">游戏中心</a>
+                        <!-- 二级菜单 S-->
+                        <div class="subMenu">
+                            <ul class="wrap">
+                                <li><a href="#">新闻资讯</a></li>
+                                <li><a href="#">攻略中心</a></li>
+                                <li><a href="#">视频中心</a></li>
+                                <li><a href="#">武器库</a></li>
+                                <li><a href="#">大神灵敏度</a></li>
+                            </ul>
+                        </div>
+                        <!-- 二级菜单 E-->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">赛事专区</a>
+                        <!-- 二级菜单 S-->
+                        <div class="subMenu">
+                            <ul class="wrap">
+                                <li><a href="#">赛事中心</a></li>
+                                <li><a href="#">PE S1赛季</a></li>
+                                <li><a href="#">PEN赛事</a></li>
+
+                            </ul>
+                        </div>
+                        <!-- 二级菜单 E-->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">自助工具</a>
+                        <div class="subMenu">
+                            <ul class="wrap">
+                                <li>
+                                    <a href="#">CDK兑换</a>
+                                </li>
+                                <li><a href="#">客服专区</a></li>
+                                <li><a href="#">举报查询</a></li>
+                                <li><a href="#">作者入住</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">社区论坛</a>
+                        <div class="subMenu">
+                            <ul class="wrap">
+                                <li>
+                                    <a href="#">官方公众号</a>
+                                </li>
+                                <li><a href="#">微信用户社区</a></li>
+                                <li><a href="#">QQ用户社区</a></li>
+                                <li><a href="#">官方微博</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+    <script>
+        $(function() {
+            $('ul.nav li.nav-item').hover(function() {
+                $(this).children('div.subMenu').stop().slideToggle(600);
+            })
+        })
+    </script>
+</body>
+
+</html>

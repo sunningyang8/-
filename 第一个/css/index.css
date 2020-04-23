@@ -1,81 +1,461 @@
-.yi {
-    background-color: white;
-    width: 100%;
-    height: 42px;
-}
-
-.yi-center {
-    height: 100%;
-    width: 936px;
-    margin: 0 auto;
-    /* background-color: pink; */
-    /* overflow: hidden; */
-}
-
-.yi-left {
-    height: 100%;
-    width: 316px;
-    /* margin-left: 0; */
-    float: left;
-}
-
-.yi-left-img-one {
-    width: 86px;
-    height: 100%;
-    float: left;
-}
-
-.yi-left-img-one img {
-    width: 100%;
-    height: 100%;
-}
-
-.yi-left-img-two {
-    width: 180px;
-    height: 100%;
-    float: right;
-}
-
-.yi-right {
-    float: right;
-    width: 246px;
-    height: 100%;
-    display: inline-block;
-    font-size: 10px;
-    line-height: 42px;
-}
-
-.yi-right-left {
-    float: left;
-}
-
-.yi-right-left a,
-.yi-right-right a {
-    text-decoration: none;
-}
-
-.yi-right-left a:hover {
-    color: rgb(185, 94, 94);
-}
-
-.yi-right-right {
-    float: right;
-}
-
-.yi-right-left i {
-    color: green;
-}
-
-.yi-right-right i {
-    color: #ccc;
-}
-
-.yi-left-img-three {
-    position: absolute;
-    margin-top: 0;
-    left: 456px;
-    top: 35px;
-    width: 850px;
-    height: 150px;
-    display: none;
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: normal
+    }
+    
+    ul,
+    ol {
+        list-style: none
+    }
+    
+    img {
+        border: none;
+        vertical-align: middle
+    }
+    
+    a {
+        color: white;
+        text-decoration: none
+    }
+    
+    a:visited {
+        text-decoration: none
+    }
+    
+    a:hover {
+        color: white;
+        text-decoration: none
+    }
+    
+    a:active {
+        color: white;
+        text-decoration: none
+    }
+    
+    table {
+        border-collapse: collapse;
+        table-layout: fixed
+    }
+    
+    input,
+    textarea {
+        outline: none;
+        border: none
+    }
+    
+    textarea {
+        resize: none;
+        overflow: auto
+    }
+    
+    .clearfix {
+        zoom: 1
+    }
+    
+    .clearfix:after {
+        content: ".";
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both;
+        overflow: hidden
+    }
+    
+    .yi {
+        background-color: white;
+        width: 100%;
+        height: 42px;
+    }
+    
+    .yi-center {
+        height: 100%;
+        width: 936px;
+        margin: 0 auto;
+        /* background-color: pink; */
+        /* overflow: hidden; */
+    }
+    
+    .yi-left {
+        height: 100%;
+        width: 316px;
+        /* margin-left: 0; */
+        float: left;
+    }
+    
+    .yi-left-img-one {
+        width: 86px;
+        height: 100%;
+        float: left;
+    }
+    
+    .yi-left-img-one img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .yi-left-img-two {
+        width: 180px;
+        height: 100%;
+        float: right;
+    }
+    
+    .yi-right {
+        float: right;
+        width: 246px;
+        height: 100%;
+        display: inline-block;
+        font-size: 10px;
+        line-height: 42px;
+    }
+    
+    .yi-right-left {
+        float: left;
+    }
+    
+    .yi-right-left a,
+    .yi-right-right a {
+        text-decoration: none;
+    }
+    
+    .yi-right-left a:hover {
+        color: rgb(185, 94, 94);
+    }
+    
+    .yi-right-right {
+        float: right;
+    }
+    
+    .yi-right-left i {
+        color: green;
+    }
+    
+    .yi-right-right i {
+        color: #ccc;
+    }
+    
+    .yi-left-img-three {
+        position: absolute;
+        margin-top: 0;
+        left: 456px;
+        top: 35px;
+        width: 850px;
+        height: 150px;
+    }
+    /* 第二 */
+    
+    .er {
+        width: 100%;
+        height: 1000px;
+        background-size: 100%;
+        background-color: pink;
+        background-image: url(../images/er3.jpeg);
+        background-repeat: no-repeat;
+    }
+    
+    select {
+        margin: 0;
+        padding: 0
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    
+    html,
+    body {
+        min-height: 100%
+    }
+    
+    body {
+        font-family: Helvetica, Pingfang SC, Microsoft YaHei, STHeiti, Verdana, Arial, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #333;
+        background: #fff;
+        position: relative
+    }
+    /* 本案例CSS*/
+    
+    header {
+        position: relative;
+        z-index: 9999;
+        /* border-bottom: 2px solid #119f0f; */
+        height: 100px;
+        box-sizing: border-box;
+    }
+    
+    .wrap {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    #nav {
+        display: flex;
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        width: 230px;
+        overflow: hidden;
+    }
+    
+    .logo a {
+        display: block;
+    }
+    
+    .logo a img {
+        max-width: 100%;
+    }
+    
+    ul.nav {
+        display: inline-flex;
+        flex: 1;
+        padding-left: 50px;
+    }
+    
+    li.nav-item {
+        flex: 1;
+    }
+    
+    li.nav-item>a {
+        display: block;
+        text-align: center;
+        line-height: 100px;
+        font-size: 16px;
+        position: relative;
+    }
+    
+    li.nav-item>a::before {
+        display: none;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        border-width: 0 10px 10px;
+        border-style: solid;
+        border-color: transparent transparent #fff;
+        position: absolute;
+    }
+    
+    li.nav-item:hover>a,
+    li.nav-item.active>a {
+        color: #d5d83e;
+    }
+    
+    li.nav-item:hover>a::before,
+    li.nav-item.active>a::before {
+        display: block;
+    }
+    /* 二级菜单 */
+    
+    .subMenu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #243124;
+        opacity: 0.7;
+    }
+    
+    .subMenu>ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subMenu>ul>li>a {
+        display: block;
+        padding: 0 18px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+    }
+    
+    .subMenu>ul>li>a:hover {
+        color: rgb(229, 231, 98);
+    }
+    
+    .er-yi {
+        background-color: #243124;
+        opacity: 0.7;
+    }
+    
+    .er-er {
+        background-color: pink;
+        width: 1077px;
+        height: 318px;
+        margin-top: 336px;
+        margin-left: 341px;
+        display: inline-block;
+    }
+    
+    .er-er-yi {
+        height: 100%;
+        width: 180px;
+    }
+    
+    .er-er-yi img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .er-er-er {
+        width: 500px;
+        height: 100%;
+        overflow: hidden;
+        margin-top: -318px;
+        margin-left: 180px;
+    }
+    
+    .swiper-slide img {
+        width: 500px;
+        height: 318px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    a:hover {
+        color: #1974A1;
+    }
+    /* 本例子css */
+    
+    .slideTxtBox {
+        width: 438px;
+        height: 100%;
+        /* border: 1px solid #ddd; */
+        /* text-align: left; */
+        margin-top: -318px;
+        background-color: #fff;
+        margin-left: 679px;
+        color: #000;
+    }
+    
+    .slideTxtBox .hd {
+        height: 57px;
+        line-height: 57px;
+        /* background: #f4f4f4; */
+        padding: 0 10px 0 20px;
+        /* border-bottom: 1px solid #ddd; */
+        position: relative;
+    }
+    
+    .slideTxtBox .hd ul {
+        float: left;
+        position: absolute;
+        left: 20px;
+        top: -1px;
+        height: 32px;
+    }
+    
+    .slideTxtBox .hd ul li {
+        float: left;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    
+    .slideTxtBox .hd ul li.on {
+        height: 30px;
+        /* background: #fff; */
+        border: 1px solid #ddd;
+        border-bottom: 2px solid #fff;
+    }
+    
+    .slideTxtBox .bd ul {
+        /* padding: 15px; */
+        zoom: 1;
+        padding: 5px;
+    }
+    
+    .slideTxtBox li {
+        height: 24px;
+        line-height: 24px;
+    }
+    
+    .bd {
+        height: 245px;
+        /* background-color: pink; */
+        color: #000;
+    }
+    
+    .bd-er li {
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .slideTxtBox .bd li .date {
+        float: right;
+        color: #333;
+    }
+    /* 下面是前/后按钮代码，如果不需要删除即可 */
+    
+    .slideTxtBox .arrow {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+    
+    .slideTxtBox .arrow a {
+        display: block;
+        width: 5px;
+        height: 9px;
+        float: right;
+        margin-right: 5px;
+        margin-top: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        background: url("images/arrow.png") 0 0 no-repeat;
+    }
+    
+    .slideTxtBox .arrow .next {
+        background-position: 0 -50px;
+    }
+    
+    .slideTxtBox .arrow .prevStop {
+        background-position: -60px 0;
+    }
+    
+    .slideTxtBox .arrow .nextStop {
+        background-position: -60px -50px;
+    }
+    
+    .yy {
+        color: gold;
+        font-size: 16px;
+        background-color: rgba(247, 247, 247);
+    }
+    
+    .zz {
+        color: gold;
+    }
+    
+    .er-san {
+        width: 1200px;
+        height: 179px;
+        margin-left: 291px;
+    }
+    
+    .er-san img {
+        width: 240px;
+        height: 100%;
+        margin-left: 49px;
+    }
