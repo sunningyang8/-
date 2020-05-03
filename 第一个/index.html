@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/conmment.css">
     <!-- <link rel="stylesheet" href="./lib/reset.css"> -->
     <link rel="stylesheet" href="./fonts/iconfont.css">
+
 </head>
 
 <body>
@@ -178,7 +179,7 @@
                     <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
-            <script src="../lib/jquery-1.12.3.min.js"></script>
+            <!-- <script src="../lib/jquery-1.12.3.min.js"></script> -->
             <script src="./js/swiper.min.js"></script>
             <script src="./js/swiper.jquery.js"></script>
             <script>
@@ -290,7 +291,1594 @@
         </div>
     </div>
     <!-- 第三部分 -->
-    <div></div>
+    <div class="san">
+        <div class="container san-yi">
+            <div class="san-laft">
+                <div class="lun">
+                    <div class="yi">
+                        <div class="yi-yi"><i class="iconfont">&#xe627;</i>精英爆料</div>
+                        <div class="tab">
+                            <a href="javascript:;" class="nn">新玩法/模式</a>
+                            <a href="javascript:;">新武器/皮肤</a>
+                            <a href="javascript:;">新地图</a>
+                            <a href="javascript:;">新载具</a>
+                        </div>
+                        <div class="yi-san">
+                            <a href="">前往资料站<i class="iconfont">&#xe668;</i></a>
+                        </div>
+                    </div>
+
+                    <div class="content">
+
+                        <img src="./images/1.jpg" alt="" class="hh">
+                        <img src="./images/2.jpg" alt="">
+                        <img src="./images/3.jpg" alt="">
+                        <img src="./images/4.png" alt="">
+                    </div>
+                </div>
+                <script>
+                    let obox = document.querySelectorAll('.tab>a')
+                    let on = document.querySelectorAll('img')
+                        // console.log(obox)
+                    for (let i = 0; i < obox.length; i++) {
+                        obox[i].onclick = function() {
+                            for (let j = 0; j < obox.length; j++) {
+                                obox[j].className = ""
+                            }
+                            this.className = "nn"
+                            for (let j = 0; j < on.length; j++) {
+                                on[j].className = ""
+                            }
+                            on[i].className = "hh"
+                        }
+
+                    }
+                </script>
+            </div>
+            <div class="san-right">
+                <div class="san-right-yi"><i class="iconfont">&#xe7e1;</i>活动中心</div>
+                <div class="pb-carouselWarp demo2">
+
+                    <ul class="pb-carousel">
+                        <li class="pb-this"><img src="./images/下载 (1).jfif" alt="" /></li>
+                        <li><img src="./images/下载.jfif" alt="" /></li>
+                        <li><img src="./images/下载 (1).jfif" /></li>
+                        <li><img src="./images/下载.jfif" alt="" /></li>
+                        <li><img src="./images/下载 (1).jfif" alt="" /></li>
+                    </ul>
+                    <ul class="pb-carousel-ind">
+                        <li class="pb-this"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <!-- <button class="pb-arrow pb-arrow-prev"></button>
+                    <button class="pb-arrow pb-arrow-next" id="aa"></button> -->
+                </div>
+                <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+                <script src="js/carousel.min.js" type="text/javascript" charset="utf-8"></script>
+                <script type="text/javascript">
+                    carousel(
+                        $('.demo2'), //必选， 要轮播模块(id/class/tagname均可)，必须为jQuery元素
+                        {
+                            type: 'fade', //可选，默认左右(leftright) - 'leftright' / 'updown' / 'fade' (左右/上下/渐隐渐现)
+                            arrowtype: 'move', //可选，默认一直显示 - 'move' / 'none'	(鼠标移上显示 / 不显示 )
+                            autoplay: true, //可选，默认true - true / false (开启轮播/关闭轮播)
+                            time: 4000 //可选，默认3000
+                        }
+                    );
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="si">
+        <div class="si-left">
+            <div class="floor-course">
+                <div class="floor-content">
+                    <!-- <div class="floor-side">
+                            <h3>
+                                <a href="#">职业·考证</a>
+                            </h3>
+                            <a href="#" class="floor-side-link">
+                                <img src="images/head-fl.jpg" alt="">
+                            </a>
+                        </div> -->
+                    <div class="floor-side-right">
+                        <div class="hd floor-side-list">
+                            <!-- <a href="#" class="slide-left"><i class="iconfont"></i>视频中心</a> -->
+                            <ul>
+                                <li class="on">官方视频</li>
+                                <li>人气主播</li>
+                                <li>进阶教学</li>
+                                <li>赛事专栏</li>
+
+                            </ul>
+                            <a href="#" class="slide-more">更多>></a>
+                        </div>
+                        <div class="bd floor-side-body">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad001.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">官方sai'shi用机OPPO Ace2，携手PIL双王牌演绎高大燃大片</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad002.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">周年盛典正式开启：集合，到我这里来！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad003.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">PEL官方赛事用机OPPO Ace2手感优化</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad004.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">《和平精英》4月新版-激情沙漠，战局重燃</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad005.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">《和平精英》精英无界，胜利必达</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad006.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">和平精英一分钟变强指南载具篇之三轮车操作技巧</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad007.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad008.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad009.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">和平精英 策划小白裙虎牙首秀精彩回顾</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad010.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">不求人！竞技图书馆4V4欺负小朋友，不让说出去</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad011.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">不求人！一个空投引发的战争，求哥轻松拿下六杀</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad012.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">万余：我排队拿着号码</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad013.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">不求人！遇事多动脑子，不要冲动用点子智慧</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad014.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">艺弟弟：想学渣男音不？弟弟手把手教你学渣男音！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad015.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad016.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">职业选手最爱的3个技巧，玩家学会后速上战神</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad017.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">战狼情报局：游戏中两处神秘猫猫点，你知道吗？</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad018.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">白菜高玩课堂：如何调试自己的专属灵敏度，不会的看过来！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad019.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">赛季末相冲战神的小伙伴们看这里！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad020.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">你不知道的遗迹打法，教你如何稳中取胜！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad021.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">解说：上太难啦也许不是技术的问题！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad022.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad023.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad019.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">放教练带你挖掘4AM的周冠“秘密”</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad020.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">《和平群英转》PEL史上第一个独狼夺冠，小小剑</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad021.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">2020 PEL——s1第三周 TOP5：4AM经典</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad022.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">2020 PEL-S1第三周回顾：稳定就是王道 Tianba收下周冠军</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad023.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">PEL20年S1复判者联盟第三期：XQF全员泡温泉</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad019.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">2020 PEL和平精英职业联赛S1</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad020.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                                <!-- <li> 
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad021.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad022.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad023.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">au焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+        <script type="text/javascript">
+            jQuery(".floor-side-right").slide({
+                effect: "fade",
+                autoPlay: false,
+                trigger: "mouseover",
+                delayTime: 700
+            });
+        </script>
+        <div class="si-right">
+            <div class="si-right-yi">
+                <ul>
+                    <!-- <li><i class="iconfont"></i>视频中心</li> -->
+                    <li> 月</li>
+                    <li>周 /</li>
+                    <li>日 /</li>
+
+                </ul>
+            </div>
+            <div class="si-right-er">
+                <img src="./images/si-left.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="wu">
+        <div class="wu-auto">
+            <div class="floor-course">
+                <div class="floor-content">
+                    <!-- <div class="floor-side">
+                            <h3>
+                                <a href="#">职业·考证</a>
+                            </h3>
+                            <a href="#" class="floor-side-link">
+                                <img src="images/head-fl.jpg" alt="">
+                            </a>
+                        </div> -->
+                    <div class="floor-side-right">
+                        <div class="hd floor-side-list">
+                            <!-- <a href="#" class="slide-left"><i class="iconfont"></i>视频中心</a> -->
+                            <ul>
+                                <li class="on">官方视频</li>
+                                <li>人气主播</li>
+                                <li>进阶教学</li>
+                                <li>赛事专栏</li>
+
+                            </ul>
+                            <a href="#" class="slide-more">更多>></a>
+                        </div>
+                        <div class="bd floor-side-body">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad001.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">官方sai'shi用机OPPO Ace2，携手PIL双王牌演绎高大燃大片</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad002.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">周年盛典正式开启：集合，到我这里来！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad003.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">PEL官方赛事用机OPPO Ace2手感优化</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad004.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">《和平精英》4月新版-激情沙漠，战局重燃</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad005.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">《和平精英》精英无界，胜利必达</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad006.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">和平精英一分钟变强指南载具篇之三轮车操作技巧</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad007.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad008.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price">¥1050.00</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad009.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">和平精英 策划小白裙虎牙首秀精彩回顾</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad010.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">不求人！竞技图书馆4V4欺负小朋友，不让说出去</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad011.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">不求人！一个空投引发的战争，求哥轻松拿下六杀</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad012.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">万余：我排队拿着号码</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad013.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">不求人！遇事多动脑子，不要冲动用点子智慧</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad014.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">艺弟弟：想学渣男音不？弟弟手把手教你学渣男音！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad015.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad016.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">职业选手最爱的3个技巧，玩家学会后速上战神</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad017.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">战狼情报局：游戏中两处神秘猫猫点，你知道吗？</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad018.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">白菜高玩课堂：如何调试自己的专属灵敏度，不会的看过来！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad019.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">赛季末相冲战神的小伙伴们看这里！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad020.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">你不知道的遗迹打法，教你如何稳中取胜！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad021.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">解说：上太难啦也许不是技术的问题！</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad022.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad023.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad019.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">放教练带你挖掘4AM的周冠“秘密”</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad020.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">《和平群英转》PEL史上第一个独狼夺冠，小小剑</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad021.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">2020 PEL——s1第三周 TOP5：4AM经典</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad022.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">2020 PEL-S1第三周回顾：稳定就是王道 Tianba收下周冠军</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad023.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">PEL20年S1复判者联盟第三期：XQF全员泡温泉</p>
+                                        <!-- <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p> -->
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad019.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">2020 PEL和平精英职业联赛S1</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad020.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                                <!-- <li> 
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad021.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad022.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image-ti">
+                                            <img src="images/ad023.jpg" alt="">
+                                        </div>
+                                        <p class="slide-title">au焊工特种作业操作证</p>
+                                        <p class="slide-body">
+                                            <span class="slide-body-nub">
+                                                    <i class="slide-body-nub-icon"></i>
+                                                    450
+                                                
+                                                </span>
+                                            <span class="slide-body-nup">
+                                                    <i class="slide-body-nup-icon"></i>
+                                                    230
+                                                
+                                                </span>
+                                            <span class="slide-body-price slide-admission">免费</span>
+                                        </p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+        <script type="text/javascript">
+            jQuery(".floor-side-right").slide({
+                effect: "fade",
+                autoPlay: false,
+                trigger: "mouseover",
+                delayTime: 700
+            });
+        </script>
+    </div>
 </body>
+
+</html>
 
 </html>
